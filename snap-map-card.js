@@ -1,6 +1,6 @@
 //turn the array below into a bootstrap card deck using javascript map.
 
-let cardArray = [{"userId":1,
+const array = [{"userId":1,
 	"id":1,
 	"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
 	"body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"},
@@ -20,6 +20,9 @@ let cardArray = [{"userId":1,
 		"id":5,
 		"title":"nesciunt quas odio","body":"repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"}];
 
-const mapArray = cardArray.map(index => {
+const mapArray = array.map(index => {
+	var newCard = document.getElementById("card0");
+	title = document.getElementById(title0);
+	document.title.innerHTML = index.title;
 
 });

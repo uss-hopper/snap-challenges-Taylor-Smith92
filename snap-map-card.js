@@ -20,8 +20,8 @@ const posts = [{"userId":1,
 		"id":5,
 		"title":"nesciunt quas odio","body":"repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"}];
 
-function loadPosts() {
-	const renderedPosts = posts.map((index) => {
+window.onload = () => {
+	let renderedPosts = posts.map((index) => {
 		return `
 			<div class="card">
 				<div class="card-body">
@@ -33,9 +33,9 @@ function loadPosts() {
 	});
 
 	let target = document.getElementById("target");
-	target.innerHTML = renderedPosts.toString();
+	target.innerHTML = renderedPosts.join("\r\n");
 	console.log(target);
-}
+};
 
 
 //

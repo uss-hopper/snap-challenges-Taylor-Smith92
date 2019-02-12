@@ -34,7 +34,7 @@ window.onload = () => {
 
 	let target = document.getElementById("target");
 	target.innerHTML = renderedPosts.join("\r\n");
-	console.log(target);
+	//console.log(target);
 };
 
 

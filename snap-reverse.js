@@ -7,7 +7,7 @@ let words = string.split(" ");
 * console.log(backW());
 **/
 
-function backwards(accumulator, cuurentValue) {
+function backwards(accumulator, currentValue) {
 	let combine = words.reverse();
 	return (combine.join(" "))
 }

@@ -51,7 +51,7 @@ let array = [
 			"bs":"target end-to-end models"}}];
 
 
-
+/**
 const thisThing = array.map((item)=> {
 	let addyDress = item.address;
 	let geoThing = addyDress.geo;
@@ -61,8 +61,7 @@ const thisThing = array.map((item)=> {
 
 
 
-const getGeo = array.reduce(
-	(total = 0, index) => {
+const getGeo = array.reduce((total = 0, index) => {
 		let it = index.address.geo;
 		//console.log(it);
 		return total + it + index.name;
@@ -70,3 +69,11 @@ const getGeo = array.reduce(
 );
 
 console.log(getGeo);
+**/
+
+
+let userGeos = array.reduce( (total , index) => {
+	let user =  "Name: "+ index.name + ", Latitude: " + index.address.geo.lat +", Longitude: "+ index.address.geo.lng + "; ";
+	return (total + user);
+});
+ console.log(userGeos);

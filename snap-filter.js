@@ -5,7 +5,6 @@ let string = "Ensign Babyface! Your shields were failing, sir. This should be in
 let array = string.split(" ");
 
 filterArray = array.filter(index => {
-	// toLowerCase allows me to filter just "f" but also remove "F" from the array of strings
 	return index[0].toLowerCase() !== "e";
 });
 
